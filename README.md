@@ -9,8 +9,8 @@ A simple Python 3 script to get a list of unique words from the Tamil Wikipedia,
 ## Output
 One can generate either
 
-* A list of words sorted in descending order of frequency, with each line of the output file containing a single word.
-* A list as above, but with each word accompanied by the number of occurrences in the input file (a tab character separates the number and the word).
+* A list of words sorted in descending order of frequency, with each line of the output file containing a single word. This file will only contain words that appear more than 100 times in the input file.
+* A list as above, but with each word accompanied by the number of occurrences in the input file (a tab character separates the number and the word). There is no frequency cutoff for this list
 
 ## Acknowledgments
 Inspired by https://github.com/tshrinivasan/tamil-wikipedia-word-list
