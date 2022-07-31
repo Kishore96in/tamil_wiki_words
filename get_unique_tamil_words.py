@@ -26,11 +26,6 @@ with open(wiki_dump_file) as infile:
 
 tamil_words_sorted = sorted(tamil_words_set, key=lambda x: tamil_words_set[x], reverse=True) #Sort the words in order of frequency. See https://stackoverflow.com/a/25815414
 
-with open(unique_words_output_file,'w') as uniq_words:
-	for word in tamil_words_set.elements():
-		uniq_words.write(word)
-		uniq_words.write("\n")
-
 if unique_words_output_file is not None:
 	uniq_words = open(unique_words_output_file,'w')
 if unique_words_with_frequency_output_file is not None:
